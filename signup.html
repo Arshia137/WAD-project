@@ -1,0 +1,104 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="org.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <center><img src="org.png" width="150" height="150"</center><br><br>
+    <div class="login-container">
+        <h1>Signup</h1>
+        <form action="home2.html"post">
+            <div class="input-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email (Gmail only):</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address">
+</div>
+<div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+</div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>  
+</body>
+</html>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    background-image: url("best.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.login-container {
+    background-color: #160621; /* Purple background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6A0DAD;
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #fff; /* Input text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #8A2BE2; /* Light purple border on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8A2BE2; /* Light purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6A0DAD; /* Darker purple on hover */
+}
+
+}</style>
